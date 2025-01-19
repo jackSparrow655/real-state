@@ -35,9 +35,9 @@ const Projects = () => {
             {projectsData.map((project, index) => (
                 <div key={index} className='relative mt-10 h-[400px] w-[200px] sm:w-[280px]'>
                     <img src={project.image} alt="project-imagew" className='rounded-md' />
-                    <div className='border w-fit px-5 py-2 absolute translate-x-10 -translate-y-1/2 float-start bg-neutral-100 rounded-md'>
-                        <h3 className='text-xl font-semibold tracking-wide'>{project.title}</h3>
-                        <div className='text-neutral-500 '>
+                    <div className='border flex flex-col w-[80%] px-5 py-2 absolute translate-x-[1rem] md:translate-x-8 -translate-y-1/2 float-start bg-neutral-100 rounded-md'>
+                        <h3 className='text-sm sm:text-xl font-semibold tracking-wide'>{project.title}</h3>
+                        <div className='text-neutral-500 text-[10px] sm:text-[15px]'>
                             {project.price} | {project.location}
                         </div>
                     </div>
